@@ -5,6 +5,8 @@ import Card from "@material-ui/core/Card";
 import SortIcon from "@material-ui/icons/ArrowDownward";
 import Button from "@material-ui/core/Button";
 import ButtonGroup from "@material-ui/core/ButtonGroup";
+import IconButton from "@material-ui/core/IconButton";
+import AutorenewIcon from "@material-ui/icons/Autorenew";
 import { BiMenu } from "react-icons/bi";
 import { RiMenuFill } from "react-icons/ri";
 import { FiSettings } from "react-icons/fi";
@@ -18,9 +20,8 @@ import {
   OutlinedInput,
 } from "@material-ui/core";
 import Search from "@material-ui/icons/Search";
-
-
-
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import { TailSpin } from "react-loader-spinner";
 createTheme("solarized", {
   text: {
     primary: "white",
@@ -39,13 +40,23 @@ createTheme("solarized", {
 });
 
 function App() {
-
   const [data, setData] = useState(movies);
+  const [flag, setFlag] = useState("false");
 
   useEffect(() => {
+    setFlag("true");
     setData(movies);
+    setTimeout(() => {
+      setFlag("false");
+    }, 700);
   }, [movies]);
-
+  const Rendering = () => {
+    setFlag("true");
+    setData(movies);
+    setTimeout(() => {
+      setFlag("false");
+    }, 700);
+  };
   const [category, setCategory] = useState(new Set());
   const [search, setSearch] = useState(data);
   const [select, setSelect] = useState(data);
@@ -107,7 +118,6 @@ function App() {
         </div>
       ),
       sortable: true,
-
     },
     {
       name: "Name",
@@ -156,7 +166,6 @@ function App() {
         </div>
       ),
       sortable: true,
-
     },
     {
       name: "Vol in 1/7/30 days",
@@ -185,8 +194,6 @@ function App() {
       sortable: true,
     },
   ];
-
-  
 
   return (
     <div className="App">
@@ -234,11 +241,14 @@ function App() {
             >
               Reavealing
             </Button>
+            <Button onClick={Rendering} className="search_btn_grp">
+              <AutorenewIcon />
+            </Button>
           </ButtonGroup>
         </Grid>
         <Grid item xs={12} sm={6} lg={4} lg={6}>
           <Button className="btn_log">
-            <GrLogout style={{ color: "white" }}  />
+            <GrLogout style={{ color: "white" }} />
             &nbsp; Connect
           </Button>
           <Button className="btn_set">
@@ -247,17 +257,23 @@ function App() {
         </Grid>
       </Grid>
       <br />
-      <Card>
-        <DataTable
-          columns={columns}
-          data={search}
-          defaultSortField="title"
-          sortIcon={<SortIcon />}
-          pagination
-          striped
-          theme="solarized"
-        />
-      </Card>
+      {flag == "true" ? (
+        <div style={{position:"absolute",top:"50%",left:"50%"}}>
+        <TailSpin heigth="100" width="100" color="blue" ariaLabel="loading" />
+        </div>
+      ) : (
+        <Card>
+          <DataTable
+            columns={columns}
+            data={search}
+            defaultSortField="title"
+            sortIcon={<SortIcon />}
+            pagination
+            striped
+            theme="solarized"
+          />
+        </Card>
+      )}
 
       <Grid container spacing={3} className="footer" justify="center">
         <Grid item xs={12} md={12} lg={2}>
