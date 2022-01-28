@@ -1,0 +1,213 @@
+.App {
+  text-align: center;
+  margin-top: 50px;
+}
+.searchByName {
+  background-color: rgb(46, 42, 42);
+  color: white !important;
+}
+.table {
+  /* background-color: rgb(47, 37, 107); */
+}
+body {
+  background-color:  rgb(33, 59, 82)
+}
+.logo_text {
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+}
+.search_btn_grp {
+  color: rgb(255, 247, 247) !important;
+  background-color: #4e4b53 !important;
+  border: 1px solid black !important;
+}
+.social-img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.vol-icon {
+  height: 100%;
+}
+.search-label {
+  color: white !important;
+}
+.MuiGrid-spacing-xs-3 {
+  margin: 0px !important;
+}
+.btn_set {
+  color: aliceblue !important;
+  background-color: rgb(116, 116, 116) !important;
+  float: right;
+  margin-right: 20px !important;
+
+  font-size: 20px;
+  padding: 10px!important;
+}
+.btn_log {
+  color: aliceblue !important;
+  background-color: rgb(77, 63, 204) !important;
+  margin-right: 20px !important;
+
+  float: right;
+  font-size: 20px;
+  padding: 5px;
+}
+.div-vol0 {
+  background-color: rgb(71, 29, 29);
+  height: 50%;
+  width: 30px;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 20px;
+  color: white;
+}
+.div-vol1 {
+  background-color: rgb(21, 70, 193);
+  height: 50%;
+  width: 30px;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 20px;
+  color: white;
+}
+.div-vol2 {
+  background-color: rgb(14, 139, 56);
+  height: 50%;
+  width: 30px;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 20px;
+  color: white;
+}
+.div-vol3 {
+  background-color: rgb(204, 22, 204);
+  height: 50%;
+  width: 30px;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 20px;
+  color: white;
+}
+.div-vol4 {
+  background-color: rgb(109, 8, 8);
+  height: 50%;
+  width: 30px;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 20px;
+  color: white;
+}
+.status-Reveal {
+  background-color: rgb(14, 119, 4);
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+.status-UnReal {
+  background-color: rgb(11, 13, 161);
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+.status-Reavealing {
+  background-color: rgb(148, 11, 161);
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+.footer {
+  background-color:  rgb(33, 59, 82);
+  border-top: 1px solid white;
+  position: sticky;
+  bottom: 0;
+}
+.footer-left-grp {
+  padding: 3px;
+  font-size: 18px;
+}
+.footer-right-grp {
+  padding: 3px;
+  font-size: 18px;
+}
+.footer-grp {
+  margin-right: 10px;
+  display: flex;
+}
+.footer-white {
+  color: white;
+  margin-right: 10px;
+  margin-top: 3px;
+}
+.footer-grey {
+  color: rgb(155, 144, 144);
+  margin-top: 3px;
+
+}
+.footer-green {
+  background-color: rgb(42, 207, 21);
+  padding: 3px;
+  border-radius: 5px;
+}
+.footer-game {
+  background-color: rgb(207, 126, 21);
+  padding: 3px;
+  border-radius: 5px;
+}
+.footer-red {
+  background-color: rgb(207, 27, 21);
+  padding: 3px;
+  border-radius: 5px;
+}
+.links_container__EX2pN {
+  display: -moz-box;
+  display: flex;
+}
+.dark .highlight-module_flat__YhA5p {
+  color: var(--highlight-5);
+}
+.size-module_medium__3lKxN {
+  height: 32px;
+  padding: 0 12px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.flat-module_main__3JgWA {
+  -webkit-transition: background-color 0.1s, outline 0.2s ease-out;
+  transition: background-color 0.1s, outline 0.2s ease-out;
+  border-radius: 0;
+  border: 1px solid transparent;
+  background: 0 0;
+}
+.button-module_button__3MTAs {
+  cursor: pointer;
+  display: -moz-box;
+  display: flex;
+  -moz-box-pack: center;
+  justify-content: center;
+  -moz-box-align: center;
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+}
+.outline-module_always__14Wp7,
+.outline-module_normal__2UWTT {
+  -webkit-transition: outline 0.2s ease-out;
+  transition: outline 0.2s ease-out;
+  outline: 8px solid transparent;
+  outline-offset: -2px;
+}
+.gqimDw  {
+  border-top: 1px solid white!important;
+}
+option{color: black;}
+.dwZKcm:nth-child(even){
+  background-color: rgb(33, 78, 175)!important;
+  color: white!important;
+}.dwZKcm:nth-child(odd){
+  background-color: rgb(12, 37, 90)!important;
+  color: white!important;
+}
