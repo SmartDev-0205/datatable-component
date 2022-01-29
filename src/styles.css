@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  margin-top: 50px;
+  margin: 0px;
 }
 .searchByName {
   background-color: rgb(46, 42, 42);
@@ -241,4 +241,21 @@ option{color: black;}
 }
 .dwZKcm {
   font-size: 18px!important;
+}
+.MuiPaper-root {
+  background-color: rgb(33,59,82)!important;
+}
+.MuiGrid-spacing-xs-3 {
+  width: 100%!important;
+}
+
+.links_container__EX2pN {
+  position: absolute!important;
+  right: 0px!important;
+}
+@media (max-width:600px) {
+  .links_container__EX2pN {
+    margin-left: 0%!important;
+    position: relative!important;
+  }
 }

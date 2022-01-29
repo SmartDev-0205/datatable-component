@@ -276,7 +276,7 @@ function App() {
       )}
 
       <Grid container spacing={3} className="footer" justify="center">
-        <Grid item xs={12} md={12} lg={2}>
+        <Grid item xs={12} sm={12} md={4} lg={2}>
           <div style={{ display: "flex" }} className="footer-left-grp">
             <div className="footer-block footer-grp">
               <span className="footer-grey">Block:</span>
@@ -285,7 +285,7 @@ function App() {
           </div>
         </Grid>
 
-        <Grid item xs={12} md={12} lg={5}>
+        <Grid item xs={12}  sm={6} md={4} lg={5}>
           <div style={{ display: "flex" }} className="footer-left-grp">
             <div className="footer-fast footer-grp">
               <span className="footer-grey">Gas(Gwei):</span>
@@ -303,7 +303,7 @@ function App() {
             </div>
           </div>
         </Grid>
-        <Grid item item xs={12} md={12} lg={5} className="footer-right-grp">
+        <Grid item item xs={12} sm={6}  md={4} lg={5} className="footer-right-grp">
           <div class="links_container__EX2pN" style={{ marginLeft: "50%" }}>
             <a
               class="button-module_button__3MTAs outline-module_normal__2UWTT size-module_medium__3lKxN flat-module_main__3JgWA highlight-module_flat__YhA5p"
