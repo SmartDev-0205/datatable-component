@@ -112,6 +112,8 @@ function App() {
     {
       name: "STT",
       selector: "stt",
+      width:"8%",
+
       cell: (selector) => (
         <div>
           <img src={selector.stt} width="50" height="50" />
@@ -123,11 +125,15 @@ function App() {
       name: "Name",
       selector: "name",
       sortable: true,
+      width:"7%",
+
     },
     {
       name: "Status",
       selector: "category",
       sortable: true,
+      width:"7%",
+
       cell: (selector) => (
         <div className={"status-" + selector.category}>{selector.category}</div>
       ),
@@ -136,6 +142,8 @@ function App() {
       name: "Floor",
       selector: "floor",
       sortable: true,
+      width:"7%",
+
       cell: (selector) => (
         <div style={{ display: "flex" }}>
           <BiMenu />
@@ -147,12 +155,13 @@ function App() {
       name: "Supply",
       selector: "supply",
       sortable: true,
+      width:"7%",
+
     },
     {
       name: "Explore",
       selector: "explore",
-      minWidth: "20%",
-
+      width:"20%",
       cell: (selector) => (
         <div style={{ display: "flex" }}>
           {selector.explore.map((data, index) => (
@@ -171,12 +180,13 @@ function App() {
       name: "Vol in 1/7/30 days",
       selector: "vol",
       sortable: true,
-      minWidth: "20%",
+      width:"20%",
+
       cell: (selector) => (
         <div style={{ display: "flex" }}>
           {selector.vol.map((data, index) => (
             <div style={{ display: "flex" }}>
-              <RiMenuFill className="vol-icon" />
+              {/* <RiMenuFill className="vol-icon" /> */}
               <div className={"div-vol" + index}>{selector.vol[index]}</div>
             </div>
           ))}
@@ -184,14 +194,18 @@ function App() {
       ),
     },
     {
-      name: "Expecting reveal time",
+      name: "Expecting  time",
       selector: "expect",
       sortable: true,
+      width:"10%",
+
     },
     {
-      name: "Fully revealed At",
+      name: "Fully At",
       selector: "fully",
       sortable: true,
+      width:"10%",
+
     },
   ];
 
@@ -241,12 +255,13 @@ function App() {
             >
               Reavealing
             </Button>
-            <Button onClick={Rendering} className="search_btn_grp">
-              <AutorenewIcon />
-            </Button>
+        
           </ButtonGroup>
         </Grid>
         <Grid item xs={12} sm={6} lg={4} lg={6}>
+        <Button onClick={Rendering} className="search_btn_load">
+              <AutorenewIcon />
+            </Button>
           <Button className="btn_log">
             <GrLogout style={{ color: "white" }} />
             &nbsp; Connect
@@ -258,7 +273,7 @@ function App() {
       </Grid>
       <br />
       {flag == "true" ? (
-        <div style={{position:"absolute",top:"50%",left:"50%"}}>
+        <div className="spinnner" style={{position:"absolute",top:"50%",left:"50%"}}>
         <TailSpin heigth="100" width="100" color="blue" ariaLabel="loading" />
         </div>
       ) : (
@@ -276,7 +291,7 @@ function App() {
       )}
 
       <Grid container spacing={3} className="footer" justify="center">
-        <Grid item xs={12} sm={12} md={4} lg={2}>
+        <Grid item xs={12} sm={12} md={2} lg={2}>
           <div style={{ display: "flex" }} className="footer-left-grp">
             <div className="footer-block footer-grp">
               <span className="footer-grey">Block:</span>
@@ -285,23 +300,17 @@ function App() {
           </div>
         </Grid>
 
-        <Grid item xs={12}  sm={6} md={4} lg={5}>
-          <div style={{ display: "flex" }} className="footer-left-grp">
-            <div className="footer-fast footer-grp">
+        <Grid item xs={12}  sm={9} md={9} lg={5}>
+          <Grid container >
               <span className="footer-grey">Gas(Gwei):</span>
-              <span className="footer-white">Fast</span>
               <span className="footer-green">281</span>
-            </div>
 
-            <div className="footer-normal footer-grp">
-              <span className="footer-white">Normal</span>
               <div className="footer-game"> 281</div>
-            </div>
-            <div className="footer-slow footer-grp">
-              <span className="footer-white">Slow</span>
+
               <span className="footer-red">281</span>
-            </div>
-          </div>
+
+          </Grid>
+         
         </Grid>
         <Grid item item xs={12} sm={6}  md={4} lg={5} className="footer-right-grp">
           <div class="links_container__EX2pN" style={{ marginLeft: "50%" }}>

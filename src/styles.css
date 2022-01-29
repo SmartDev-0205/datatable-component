@@ -22,6 +22,12 @@ body {
   background-color: #4e4b53 !important;
   border: 1px solid black !important;
 }
+.search_btn_load
+{
+  color: rgb(1, 255, 22) !important;
+  background-color: #0740db !important;
+  border: 1px solid rgb(4, 42, 7) !important;
+}
 .social-img {
   border-radius: 50%;
   margin-right: 10px;
@@ -124,6 +130,7 @@ body {
   border-top: 1px solid white;
   position: sticky;
   bottom: 0;
+  margin-left: 0.4px!important;
 }
 .footer-left-grp {
   padding: 3px;
@@ -151,16 +158,24 @@ body {
   background-color: rgb(42, 207, 21);
   padding: 3px;
   border-radius: 5px;
+  width: 20%;
+  margin-left: 10px;
 }
 .footer-game {
   background-color: rgb(207, 126, 21);
   padding: 3px;
   border-radius: 5px;
+  width: 20%;
+  margin-left: 10px;
+
 }
 .footer-red {
   background-color: rgb(207, 27, 21);
   padding: 3px;
   border-radius: 5px;
+  width: 20%;
+  margin-left: 10px;
+
 }
 .links_container__EX2pN {
   display: -moz-box;
@@ -253,9 +268,21 @@ option{color: black;}
   position: absolute!important;
   right: 0px!important;
 }
+.spinnner{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+}
+.MuiGrid-grid-xs-12 {
+  flex-basis: 85%!important;
+}
+
 @media (max-width:600px) {
   .links_container__EX2pN {
     margin-left: 0%!important;
     position: relative!important;
+  }
+  .MuiButtonGroup-root {
+    display: table!important;
   }
 }
