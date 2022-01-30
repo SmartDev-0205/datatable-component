@@ -1,0 +1,72 @@
+.logo_text {
+  font-size: 24px;
+  color: white;
+}
+.logo_text1 {
+  font-size: 18px;
+  color: rgb(246, 246, 246);
+}
+.hZcQXZ {
+  font-size: 23px !important;
+}
+
+.boqmjc {
+  font-size: 20px !important;
+}
+
+.eEdzFe {
+  font-size: 18px !important;
+  background-color: rgba(46, 44, 44, 0.682) !important;
+  color: white !important;
+}
+.hNeTsL {
+  color: white !important;
+  font-size: 18px !important;
+}
+.whVmS {
+  font-size: 18px !important;
+}
+.table_header {
+  background-color: rgba(46, 44, 44, 0.682) !important;
+}
+.avatar_img {
+  border-radius: 5px;
+}
+.search-label {
+  color: white !important;
+}
+.searchByName {
+  border: 1px solid white;
+}
+.gPLhoV {
+  background-color: white !important;
+  fill: rgb(14, 49, 248) !important;
+}
+.gPLhoV:disabled {
+  color: grey !important;
+  fill: rgb(1, 1, 3) !important;
+}
+.search_btn_load {
+  background-color: white;
+}
+.MuiButton-root {
+  color: white !important;
+  border: 1px solid white !important;
+}
+.table_left {
+  border-radius: 30px;
+}
+.table_right {
+  border-radius: 30px;
+}
+.spinnner1 {
+  position: absolute;
+  top: 50%;
+  right: 20%;
+}
+@media (max-width: 960px) {
+  .spinnner1 {
+    top: 100%;
+    right: 30%;
+  }
+}

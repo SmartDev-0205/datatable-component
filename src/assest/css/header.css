@@ -1,0 +1,30 @@
+.header_div_grp{
+    display: flex;
+    background-color: rgba(1, 6, 32, 0.979);
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    margin-left: 10%;
+    margin-top: 20px;
+    
+}
+.header_div_grp .div_name{
+    font-size: 20px;
+
+    color: white;
+}
+.header_div_grp .div_price{
+    font-size: 23px;
+
+    color: rgb(18, 211, 0);
+}
+.header_img{
+    border-radius: 50%;
+}
+@media (max-width:600px) {
+    .header_div_grp{
+        width: 100%;
+    margin-left: 0%;
+
+    }
+}
